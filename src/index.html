@@ -1,16 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title><%= htmlWebpackPlugin.options.title %></title>
-  </head>
-  <body>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+  <title>To do list</title>
+</head>
+
+<body>
+  <div class="container">
+    <h1>ToDo list</h1>
     <div class="main">
-      <button class="minus">-</button>
-      <span>100</span>
-      <button class="plus">+</button>
+      <input type="text" class="todo">
+      <button class="add">ADD</button>
     </div>
-  </body>
+    <div id="holder">
+      <!-- <p> jump run</p> -->
+    </div>
+    <div class="end">
+      <button class="done">Done</button>
+      <button class="delete">reset</button>
+    </div>
+  </div>
+</body>
+
 </html>

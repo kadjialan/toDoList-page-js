@@ -5,23 +5,75 @@ body {
   height: 100vh;
 }
 
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 .main {
   display: flex;
-  gap: 10px;
+  gap: 20px;
   align-items: center;
+  margin-bottom: 25px;
 }
 
 button {
   cursor: pointer;
-  height: 40px;
-  width: 40px;
-  border-radius: 40px;
-  border: none;
+  height: 35px;
+  width: 60px;
   background-color: sandybrown;
 }
 
-span {
-  font-size: 20px;
-  font-weight: bold;
+.add {
+  background-color: #2121f4e2;
+  border: 1px solid #2121f4e2;
+  color: white;
+  border-radius: 3px;
 }
 
+.delete {
+  background-color: red;
+  color: white;
+  border: 1px solid red;
+  border-radius: 3px;
+}
+
+.done {
+  background-color: #1addc2;
+  color: white;
+  border: 1px solid #1addc2;
+}
+
+.todo {
+  height: 33px;
+  width: 160px;
+}
+
+.end {
+  margin-top: 20px;
+  display: flex;
+  width: 260px;
+  justify-content: space-between;
+}
+
+
+.text {
+  width: 245px;
+  height: 20px;
+  border: 1px solid cornsilk;
+  background-color: cornsilk;
+  padding: 20px;
+}
+
+/* .radio {
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 70px;
+} */
+
+.icons {
+  float: right;
+}

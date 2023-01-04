@@ -1,31 +1,25 @@
 import './styles/styles.css';
 
-const plusBtn = document.querySelector('.plus');
-const minusBtn = document.querySelector('.minus');
-const textContainer = document.querySelector('span');
+const addition = document.querySelector('.add');
+const area = document.querySelector('#holder');
+const items = document.querySelector('.todo');
 
-let data = 0;
-
-function add() {
-  const value = Math.floor(Math.random() * 1000);
-  data = Math.max(data, value);
-  return value;
+function addItem() {
+  const task = items.value;
+  const todoitem = document.createElement('div');
+  todoitem.classList.add('display');
+  todoitem.innerHTML += `<div class= "text"> <input type="radio" class="radio"> ${task}  <i class="fa-solid  icons fa-trash-can"></i> </div> `;
+  area.appendChild(todoitem);
 }
 
-function sub() {
-  const value = Math.floor(Math.random() * 1000);
-  data = Math.min(data, value);
-  return value;
-}
-
-function displayValue(now, text = data) {
-  textContainer.innerHTML = `${text} (${now})`;
-}
-
-plusBtn.addEventListener('click', () => {
-  displayValue(add());
+todoitem.querySelector('.radio').addEventListener('click', () => {
+  todoitem.style.textDecoration = 'line-through';
 });
 
-minusBtn.addEventListener('click', () => {
+addition.addEventListener('click', () => {
+  addItem();
+});
+
+/* minusBtn.addEventListener('click', () => {
   displayValue(sub());
-});
+}); */
