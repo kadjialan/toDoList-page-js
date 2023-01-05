@@ -10,6 +10,9 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  min-height: 220px;
+  width: 500px;
+  background-color: #b3c3bb;
 }
 
 .main {
@@ -23,7 +26,6 @@ button {
   cursor: pointer;
   height: 35px;
   width: 60px;
-  background-color: sandybrown;
 }
 
 .add {
@@ -38,6 +40,7 @@ button {
   color: white;
   border: 1px solid red;
   border-radius: 3px;
+  margin-bottom: 10px;
 }
 
 .done {
@@ -48,14 +51,15 @@ button {
 
 .todo {
   height: 33px;
-  width: 160px;
+  width: 178px;
+  border: 2px solid whitesmoke;
+  background-color: #e3e3e3;
 }
 
 .end {
   margin-top: 20px;
   display: flex;
-  width: 260px;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 
@@ -64,16 +68,11 @@ button {
   height: 20px;
   border: 1px solid cornsilk;
   background-color: cornsilk;
-  padding: 20px;
+  padding: 20px 20px 20px 0;
 }
-
-/* .radio {
-    display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 70px;
-} */
 
 .icons {
   float: right;
+  color: red;
+  cursor: pointer;
 }
